@@ -1,0 +1,23 @@
+{
+  "name": "MRU Tab Switcher",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "mru-step": {
+      "suggested_key": {
+        "mac": "Command+Shift+K"
+      },
+      "description": "Navigate to the next recently used tab"
+    },
+    "mru-commit": {
+      "suggested_key": {
+        "mac": "Command+Shift+U"
+      },
+      "description": "Commit current MRU tab selection"
+    }
+  }
+}
